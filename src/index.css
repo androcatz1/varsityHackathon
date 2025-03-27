@@ -1,0 +1,57 @@
+/* body {
+  background-color: #f0fcff;
+}
+
+.Header{
+  background-color: hsla(200, 62%, 47%, 0.70);
+  border-radius: 5px;
+  position: sticky;
+  top: 0vh;
+  display: inline-block;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  
+}
+
+.nav{
+  background-color: rgb(254, 254, 137);
+  list-style: none;
+  display:inline;
+  padding: 12px;
+  float: right; 
+}
+
+.ul{
+  background-color: aliceblue;
+    display:inline;
+
+}
+
+.but{
+  background-color: rgb(254, 254, 137);
+  list-style: none;
+  display:inline;
+  padding: 12px;
+  float: right; 
+  
+}
+
+.Extra{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  margin-left: 10px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+} */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+

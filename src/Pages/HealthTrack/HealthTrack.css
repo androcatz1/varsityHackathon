@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* body {
+    background-color: #3c4651;
+    color: #e0e6ea;
+} */
+
+.containerHT {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerHT h1{
+    color: #e0e6ea;
+}
+
+.add.popup {
+    background-color: hsl(209, 20%, 25%);
+    margin-top: 0px;
+    height: 600px;
+    width: 600px;
+    border-radius: 12px;
+    position: fixed;
+    transition: all 0.2s ease;
+    pointer-events: all;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    z-index: 999;
+}
+
+.add.nopop {
+    background-color: #323f4b;
+    margin-top: 50px;
+    height: 600px;
+    width: 600px;
+    border-radius: 12px;
+    position: fixed;
+    opacity: 0;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    z-index: 999;
+
+}
+
+.add .body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f3f3f3;
+    border-radius: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 520px;
+}
+
+.addMedic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    gap: 23px;
+    width: 100%;
+}
+
+.addMedic .input {
+    display: flex;
+    flex-direction: column;
+}
+
+.addMedic .input p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 2px;
+}
+
+.addMedic .input input,
+.input.take select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.input.Date {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.AddMedicButton {
+    border: none;
+    height: 40px;
+    width: 120px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.AddMedicButton:hover {
+    background-color: #0056b3;
+}
+
+
+
+.add .header {
+    background-color: #3e4c59;
+    padding: 15px;
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add .header h1{
+    margin-left: 180px;
+}
+
+.add .header button {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #52606d;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-size: 1rem;
+    color: #e0e6ea;
+}
+
+.add .header button:hover {
+    cursor: pointer;
+    background-color: #616e7c;
+}
+
+.Medications {
+    background-color: #3e4c59;
+    margin-top: 70px;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.medics {
+    background-color: #3e4c59;
+    margin: 10px 5px;
+    width: 733px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.medic.body {
+    height: 537px;
+    overflow-y: auto;
+    background-color: #52606d;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.medics.all .header {
+    background-color: #52606d;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #616e7c;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.medics.all .header button {
+    border: none;
+    background-color: #616e7c;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+    font-size: 0.9rem;
+    color: #e0e6ea;
+}
+
+.medics.all .header button:hover {
+    background-color: #7b8794;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    margin: 12px;
+    border-radius: 12px;
+    background-color: #52606d;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list .icon svg {
+    height: 48px;
+    width: 48px;
+    padding: 8px;
+    fill: #526570;
+    background-color: #c0c0c0;
+    border-radius: 40%;
+    border: 1px solid #616e7c;
+}
+
+.list .listText {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e0e6ea;
+    margin-left:-150px;
+}
+
+.list button {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #7b8794;
+    transition: 0.25s ease;
+    font-size: 0.9rem;
+    color: #e0e6ea;
+}
+
+.list button:hover {
+    cursor: pointer;
+    background-color: #a3b3c2;
+}
+
+
+
+.medics.details {
+    width: 733px;
+    height: 600px;
+    background: #3C4A57; 
+    border-radius: 15px;
+    padding: 20px;
+    color: #E8EAF6; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateX(-50px); 
+    transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.medics.details .header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #A5B9D5; 
+    padding-bottom: 15px;
+    border-bottom: 2px solid #5E738C; 
+}
+
+.medics.details .body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.medics.details .name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.medics.details .details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 25px 0px;
+}
+
+.medics.details .details p {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.medics.details .details .reminder {
+    color: #FFD54F;
+    font-weight: bolder;
+
+}
+
+.medics.details .details .intake {
+    color: rgb(169, 255, 169);
+    font-weight: bolder;
+}
+
+.medics.details .buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+      
+}
+
+.medics.details .buttons button {
+    flex: 1;
+    width: 100px;
+    height: 40px;
+    margin: 0 8px;
+    /* padding: 15px; */
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+        
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.medics.details .buttons .skip {
+    background: #E57373; 
+    color: white;
+}
+
+.medics.details .buttons .taken {
+    background: #81C784; 
+    color: white;
+}
+
+.medics.details .buttons .set.reminder {
+    background: #FFD54F; 
+    color: black;
+}
+
+.medics.details .buttons .delete {
+    background: #D32F2F;
+    color: white;
+}
+
+.medics.details .buttons button:hover {
+    filter: brightness(1.2);
+}
+
+.medics.details.pop {
+    opacity: 1;
+    transform: translateX(0); 
+}
+
+.medics.details.nopop {
+    opacity: 0;
+    transform: translateX(-50px); 
+    pointer-events: none; 
+}
